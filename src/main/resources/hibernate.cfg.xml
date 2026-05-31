@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database Connection Settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://root:CMeKdPTcFavGuDThBhKiSrIZBMRaPCfi@zephyr.proxy.rlwy.net:17695/railway</property>
+        <property name="connection.username">root</property> <!-- Change to your MySQL username -->
+        <property name="connection.password">aarushi@31</property> <!-- Change to your MySQL password -->
+
+        <!-- JDBC Connection Pool -->
+        <property name="connection.pool_size">5</property>
+
+        <!-- SQL Dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Echo all executed SQL to console (great for debugging) -->
+        <property name="show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Map Entity Classes Here -->
+        <mapping class="com.glowcart.model.User"/>
+        <mapping class="com.glowcart.model.Product"/>
+        <mapping class="com.glowcart.model.Cart"/>
+    </session-factory>
+</hibernate-configuration>
