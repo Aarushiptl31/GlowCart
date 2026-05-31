@@ -3,9 +3,9 @@
     <session-factory>
         <!-- Database Connection Settings -->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://root:CMeKdPTcFavGuDThBhKiSrIZBMRaPCfi@zephyr.proxy.rlwy.net:17695/railway</property>
-        <property name="connection.username">root</property> <!-- Change to your MySQL username -->
-        <property name="connection.password">aarushi@31</property> <!-- Change to your MySQL password -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/glowcart_db?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">aarushi@31</property>
 
         <!-- JDBC Connection Pool -->
         <property name="connection.pool_size">5</property>
