@@ -1,0 +1,14 @@
+# Maven build output (never commit compiled files)
+target/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Sensitive config (if you want to exclude it)
+src/main/resources/hibernate.cfg.xml

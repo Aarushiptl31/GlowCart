@@ -1,0 +1,49 @@
+body {
+    background-color: #fdf2f8; /* Very light pink background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #db2777 !important; /* Pink brand color */
+    font-size: 1.5rem;
+}
+
+.btn-glow {
+    background-color: #db2777;
+    color: white;
+    border: none;
+}
+
+.btn-glow:hover {
+    background-color: #be185d;
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #fce7f3 0%, #ffffff 100%);
+    padding: 80px 0;
+    text-align: center;
+}
